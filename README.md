@@ -4,8 +4,8 @@ Online Order Processing System, which simulates a real-world online shopping app
 
 # How to Run
 1. Clone the repository
-```
-
+```bash
+https://github.com/desmondsyu/OnlineOrder.git
 ```
 
 2. Build the artifacts
@@ -25,7 +25,7 @@ CREATE TABLE orders (
     product_id INT NOT NULL,
     quantity INT NOT NULL,
     status VARCHAR(20) DEFAULT 'Pending',
-    order_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    order_date DATETIME NOT NULL,
     total_amount DECIMAL(10,2) NOT NULL
 );
 ```
@@ -39,7 +39,7 @@ Find data sources subsystem
 ```xml
 <subsystem xmlns="urn:jboss:domain:datasources:7.2">
 ```
-Add new data source in the tag
+Add new data source inside the tag
 ```xml
 <datasource jndi-name="java:/jdbc/OrderProcessingDS" pool-name="OrderProcessingPool" enabled="true" use-ccm="true">
     <connection-url>jdbc:mysql://localhost:3306/[your_database]</connection-url>
