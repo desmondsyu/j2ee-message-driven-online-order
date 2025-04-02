@@ -39,8 +39,9 @@ Find data sources subsystem
 ```xml
 <subsystem xmlns="urn:jboss:domain:datasources:7.2">
 ```
-Add new data source inside the tag
+Add new data source inside the tag 
 ```xml
+<!-- Inside datasources -->
 <datasource jndi-name="java:/jdbc/OrderProcessingDS" pool-name="OrderProcessingPool" enabled="true" use-ccm="true">
     <connection-url>jdbc:mysql://localhost:3306/[your_database]</connection-url>
     <driver>mysql</driver>
@@ -56,15 +57,12 @@ Add new data source inside the tag
         <prepared-statement-cache-size>32</prepared-statement-cache-size>
     </statement>
 </datasource>
-<drivers>
-<driver name="h2" module="com.h2database.h2">
-    <xa-datasource-class>org.h2.jdbcx.JdbcDataSource</xa-datasource-class>
-</driver>
+
+<!-- Inside drivers -->
 <driver name="mysql" module="com.mysql">
     <driver-class>com.mysql.cj.jdbc.Driver</driver-class>
     <xa-datasource-class>com.mysql.cj.jdbc.MysqlXADataSource</xa-datasource-class>
 </driver>
-</drivers>
 ```
 Navigate to 
 ```bash
@@ -78,13 +76,14 @@ Download mysql-connector-j-x.x.x.jar and put it in this folder
 
 In the folder, create new file module.xml and add content
 ```xml
+<?xml version="1.0" encoding="UTF-8"?>
 <module xmlns="urn:jboss:module:1.3" name="com.mysql">
     <resources>
         <resource-root path="mysql-connector-j-9.2.0.jar"/>
     </resources>
     <dependencies>
-        <module name="jakarta.api"/>
-        <module name="jakarta.transaction.api"/>
+        <module name="javax.api"/>
+        <module name="javax.transaction.api"/>
     </dependencies>
 </module>
 ```
