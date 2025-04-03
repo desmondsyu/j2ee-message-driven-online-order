@@ -7,5 +7,15 @@
 
     <display-name>OnlineOrderSysWeb</display-name>
 
+    <servlet>
+        <servlet-name>OrderTestServlet</servlet-name>
+        <servlet-class>com.order.servlet.OrderTestServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>OrderTestServlet</servlet-name>
+        <url-pattern>/OrderTestServlet</url-pattern>
+    </servlet-mapping>
+
 
 </web-app>

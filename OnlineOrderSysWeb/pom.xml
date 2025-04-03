@@ -526,6 +526,12 @@
             <artifactId>jakarta.security.enterprise-api</artifactId>
             <version>3.0.0</version>
         </dependency>
+        <dependency>
+            <groupId>OnlineOrderSys</groupId>
+            <artifactId>OnlineOrderSysEJB</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+            <scope>compile</scope>
+        </dependency>
     </dependencies>
     <build>
         <plugins>
