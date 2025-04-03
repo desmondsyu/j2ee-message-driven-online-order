@@ -16,6 +16,16 @@
         <servlet-name>OrderTestServlet</servlet-name>
         <url-pattern>/OrderTestServlet</url-pattern>
     </servlet-mapping>
+    <servlet>
+        <servlet-name>PlaceOrderTestServlet</servlet-name>
+        <servlet-class>com.order.servlet.PlaceOrderTestServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>PlaceOrderTestServlet</servlet-name>
+        <url-pattern>/PlaceOrderTestServlet</url-pattern>
+    </servlet-mapping>
+
 
 
 </web-app>

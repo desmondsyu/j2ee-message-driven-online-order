@@ -1,1 +1,2 @@
 com\order\servlet\OrderTestServlet.class
+com\order\servlet\PlaceOrderTestServlet.class
