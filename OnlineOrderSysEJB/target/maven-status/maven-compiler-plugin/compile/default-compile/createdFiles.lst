@@ -1,0 +1,5 @@
+com\order\ejb\OrderService.class
+com\order\ejb\Status.class
+com\order\ejb\OrderProcessingMDB.class
+com\order\ejb\OrderEntity.class
+com\order\ejb\OrderMessageProducer.class
