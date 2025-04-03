@@ -139,6 +139,17 @@ In the folder, create new file module.xml and add content
 
 Deploy the ear artifact in WildFly and start the server
 
+# Testing URLs
+
+For place order
+```
+http://localhost:8080/OnlineOrderSysWeb/PlaceOrderTestServlet?customerId=102&productId=502&quantity=2&totalAmount=144
+```
+For process order
+```
+http://localhost:8080/OnlineOrderSysWeb/OrderTestServlet?orderId=1&status=Processed
+```
+
 # Members
 | Name             | N_ID      |
 |------------------|-----------|
