@@ -1,6 +1,6 @@
 # Lab 11 - Entity and Message Driven Beans
 
-Online Order Processing System, which simulates a real-world online shopping application. The system will use Entity Beans for persisting orderEntity data and MDBs for handling asynchronous messaging between different components of the system, all deployed to Wildfly.
+Online Order Processing System, which simulates a real-world online shopping application. The system will use Entity Beans for persisting order data and MDBs for handling asynchronous messaging between different components of the system, all deployed to Wildfly.
 
 # How to Run
 1. Clone the repository
